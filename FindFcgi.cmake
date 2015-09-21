@@ -41,6 +41,7 @@ FIND_PATH(FCGI_INCLUDE_DIR
         /usr/local/include
         /usr/pkg/include
         $ENV{HOME}/pkg/include
+        /opt/pkg/include
     #MSVC
         "$ENV{LIB_DIR}/include"
         $ENV{INCLUDE}
@@ -58,6 +59,7 @@ FIND_LIBRARY(FCGI_LIBRARY
         /usr/lib64
         /usr/pkg/lib
         $ENV{HOME}/pkg/lib
+        /opt/pkg/lib
     #MSVC
         "$ENV{LIB_DIR}/lib"
         $ENV{LIB}
