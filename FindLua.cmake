@@ -32,22 +32,31 @@
 FIND_PATH(LUA_INCLUDE_DIR
     NAMES
         lua.h
+        lauxlib.h
+        lua.hpp
+        luaconf.h
+        lualib.h
     PATHS
         /usr/local/include
         /usr/include
         /usr/pkg/include
         $ENV{HOME}/pkg/include
-        /opt/pkg/include
+        /opt/pkg/include/lua-5.3/
     #MSVC
         "$ENV{LIB_DIR}/include"
         $ENV{INCLUDE}
 )
 
 # Locate library
+# For OS-X & pkgsrc
+# ln -a liblua5.3.dylib liblua.dylib
+# ln -a liblua5.3.a liblua.a
+# XXX - How can I avoid this?
 FIND_LIBRARY(LUA_LIBRARY
     NAMES
         lua
         liblua
+        liblua5.3
     PATHS 
         /usr/local/lib
         /usr/lib
