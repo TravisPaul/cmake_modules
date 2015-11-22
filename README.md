@@ -11,7 +11,8 @@ set(CMAKE_MODULE_PATH
     ${CMAKE_SOURCE_DIR}/cmake_modules ${CMAKE_MODULE_PATH})
 ```
 
-Then use the find_package command to find the libraries:
+Then use the [find_package](https://cmake.org/cmake/help/latest/command/find_package.html?highlight=find_package) 
+command to find the libraries:
 ```cmake
 find_package(FCGI)
 find_package(SDS)
