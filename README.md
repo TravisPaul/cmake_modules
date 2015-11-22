@@ -13,8 +13,8 @@ set(CMAKE_MODULE_PATH
 
 Then use the find_package command to find the libraries:
 ```cmake
-find_package(Fcgi)
-find_package(Sds)
+find_package(FCGI)
+find_package(SDS)
 find_package(lua)
 ```
 
