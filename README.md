@@ -16,5 +16,6 @@ Then use the find_package command to find the libraries:
 find_package(FCGI)
 find_package(SDS)
 find_package(Lua)
+find_package(ODBC)
 ```
 
