@@ -15,6 +15,6 @@ Then use the find_package command to find the libraries:
 ```cmake
 find_package(FCGI)
 find_package(SDS)
-find_package(lua)
+find_package(Lua)
 ```
 
